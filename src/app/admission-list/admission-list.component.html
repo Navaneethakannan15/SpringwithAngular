@@ -1,0 +1,30 @@
+<div>
+    <h2>Admission Student List</h2>
+    </div>
+    <div class="panel-body">
+        <table>
+            <thead>
+                <tr>
+                    <td> Id </td>
+                    <td>name</td>
+                    <td>surname</td>
+                    <td>city</td>
+                    <td>cellNo</td>
+                    <td>mark</td>
+                    <td>email</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let admin of admissions |async">
+                <td>{{admin.id}}</td>
+                <td>{{admin.name}}</td>
+                <td>{{admin.surname}}</td>
+                <td>{{admin.city}}</td>
+                <td>{{admin.cellNo}}</td>
+                <td>{{admin.mark}}</td>
+                <td>{{admin.email}}</td>
+               
+                </tr>
+            </tbody>
+        </table>
+    </div>
